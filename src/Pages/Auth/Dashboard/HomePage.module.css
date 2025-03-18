@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #0a1a2a; /* Deep navy */
+    --secondary-color: #32ff7e; /* Neon green */
+    --accent-color: #ff9500; /* Vibrant orange */
+    --text-color: #f5f5f5; /* Soft white */
+    --glass-bg: rgba(20, 20, 30, 0.7); /* Glass effect */
+    --glass-border: rgba(255, 255, 255, 0.1); /* Subtle border */
+    --gradient-bg: linear-gradient(135deg, #121212, #1c1c1c); /* Subtle dark gradient */
+  }
+  
+  .homePageWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  background-color: black;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  /* Fixed Logo */
+  .tradeloop-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Adjust based on your logo size */
+    z-index: 10;
+  }
+  
+  /* Header Section - Fixed on top */
+  .cent {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgb(47, 42, 42);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  
+  .cent h3 {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: none; /* Removed glowing effect from text */
+    z-index: 10; /* Ensures text stays above other content */
+  }
+  
+  /* Offset the content to prevent overlap with fixed header */
+  .homePageWrapper {
+    padding-top: 60px; /* Adjust the space for the fixed header */
+  }
+  
+  /* Dashboard */
+  .dashboard {
+    backdrop-filter: blur(15px);
+  background-color:#000000;
+    
+    border-radius: 15px;
+    padding: 2rem;
+width: 90vw;
+    margin: 1rem auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .dashboard h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .dashboard p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .gainLoss,
+  .portfolioValue {
+    flex: 1 1 calc(50% - 1rem);
+    backdrop-filter: blur(12px);
+    background-color: #ffffff;
+    
+    border: 1px solid var(--glass-border);
+
+
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgb(32, 247, 215);
+    transition: box-shadow 0.3s, transform 0.2s;
+   /* Glowing effect on cards */
+  }
+  
+  
+  .gainLoss h3,
+  .portfolioValue h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+  
+  /* Chart Section */
+  .chart {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgb(109, 255, 41);
+   
+  }
+  
+  /* Buttons with Subtle Glow Effect */
+  .linnk {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .linnk a {
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--secondary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+    text-shadow: 0 0 6px var(--secondary-color), 0 0 8px var(--secondary-color); /* Glowing effect on button */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+    }
+  
+    .gainLoss,
+    .portfolioValue {
+      flex: 1 1 100%;
+    }
+  
+    .dashboard {
+      padding: 1.5rem;
+    }
+  
+    .chart {
+      padding: 1rem;
+    }
+  
+    .cent h3 {
+      font-size: 1rem;
+    }
+  }
+  .cento{
+    background-color: #0a1a2a00;
+  }
+  

@@ -1,17 +1,20 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+// Import Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js";
 
+// Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAMDlmHwwKvnipr8egwQfYkdwEBLlkodTQ",
-    authDomain: "trade-simulator-35ce0.firebaseapp.com",
-    projectId: "trade-simulator-35ce0",
-    storageBucket: "trade-simulator-35ce0.firebasestorage.app",
-    messagingSenderId: "32191864339",
-    appId: "1:32191864339:web:eb473df7a79dad290529e6",
-    measurementId: "G-Z3HW5SB056"
+  apiKey: "AIzaSyCoxj1V4wtYMbnrqjeiIxQ4WMyQmmA7GgE",
+  authDomain: "tradesandco-98683.firebaseapp.com",
+  projectId: "tradesandco-98683",
+  storageBucket: "tradesandco-98683.appspot.com",  // ✅ Fixed this line
+  messagingSenderId: "651489584973",
+  appId: "1:651489584973:web:6b7a58646c9f0f4a30b904",
+  measurementId: "G-2VWQ8E2T3T"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+const analytics = getAnalytics(app);
+
+console.log("Firebase initialized successfully");

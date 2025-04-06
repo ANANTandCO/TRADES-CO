@@ -11,8 +11,8 @@ const FrontPage = () => {
           <h1>TRADES&CO.</h1>
         </div>
         <div className="navbar-links">
-          <Link className="navbar-link" to="/login">Login</Link>
-         <Link className="navbar-link signup" to="/signup">Sign Up</Link>
+          <Link className="navbar-link" to="https://tradescoanant.us.auth0.com/u/login?state=hKFo2SB5bjlpWVl3UlFnSmcxczFSZGZFb000SkhENmUtaS1xY6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGxpTk5XVERHMWJ6b083Y0JIVFljLVlXNnMtWVlMVXVxo2NpZNkgSkVYaGFtTHZOVm1HUm1ZOGN3djFzOTFVRzUzVXp5OVU">Login</Link>
+         <Link className="navbar-link signup" to="https://tradescoanant.us.auth0.com/u/signup/Username-Password-Authentication?state=hKFo2SB5bjlpWVl3UlFnSmcxczFSZGZFb000SkhENmUtaS1xY6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGxpTk5XVERHMWJ6b083Y0JIVFljLVlXNnMtWVlMVXVxo2NpZNkgSkVYaGFtTHZOVm1HUm1ZOGN3djFzOTFVRzUzVXp5OVU">Sign Up</Link>
         </div>
       </nav>
 
@@ -33,7 +33,7 @@ const FrontPage = () => {
           TRADES&CO. is the ultimate paper trading platform where you can practice your trading skills with real-time data, all without any financial risk. Perfect for beginners and pros alike.
         </p>
         <p>Created by Anant Prakash</p>
-        <Link to="/signup" className="cta-button">Join the Community</Link>
+        <Link to="https://tradescoanant.us.auth0.com/u/signup/Username-Password-Authentication?state=hKFo2SB5bjlpWVl3UlFnSmcxczFSZGZFb000SkhENmUtaS1xY6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGxpTk5XVERHMWJ6b083Y0JIVFljLVlXNnMtWVlMVXVxo2NpZNkgSkVYaGFtTHZOVm1HUm1ZOGN3djFzOTFVRzUzVXp5OVU" className="cta-button">Join the Community</Link>
       </section>
 
       {/* How Tradeloop Works Section */}
